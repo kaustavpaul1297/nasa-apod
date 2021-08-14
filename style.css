@@ -55,7 +55,7 @@ body {
   z-index: -1;
 }
 .clickable {
-  color: rgb(6, 173, 173);
+  color: rgb(0, 202, 169);
   cursor: pointer;
   user-select: none;
 }
@@ -99,7 +99,7 @@ body {
 
 /* Save Confirmation */
 .save-confirmed {
-  background: white;
+  background: rgb(72, 0, 114);
   padding: 8px 16px;
   border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
