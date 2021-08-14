@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nasa Project</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="loader hidden">
+      <img src="space.svg" alt="Space Image" />
+    </div>
+    <div class="container">
+      <!-- Navigation -->
+      <div class="navigation-container">
+        <span class="background"></span>
+        <!-- Results Nav -->
+        <span class="navigation-items" id="resultsNav">
+          <h3 class="clickable" onclick="updateDOM('favourites')">
+            Favourites
+          </h3>
+          <h3>&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;</h3>
+          <h3 class="clickable" onclick="getNasaPictures()">Load More</h3>
+        </span>
+        <!-- Favorites Nav -->
+        <span class="navigation-items hidden" id="favouritesNav">
+          <h3 class="clickable" onclick="getNasaPictures()">
+            Load More NASA Images
+          </h3>
+        </span>
+      </div>
+      <div class="image-container"></div>
+    </div>
+    <!-- Save confirmed -->
+    <div class="save-confirmed" hidden>
+      <h1>ADDED!</h1>
+    </div>
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
